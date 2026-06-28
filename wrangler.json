@@ -6,8 +6,13 @@
 	"upload_source_maps": true,
 	"migrations": [
 		{
+			"tag": "v1",
+			"new_sqlite_classes": ["MyDurableObject"]
+		},
+		{
+			"tag": "v2",
 			"new_sqlite_classes": ["ChatRoom"],
-			"tag": "v1"
+			"deleted_classes": ["MyDurableObject"]
 		}
 	],
 	"durable_objects": {
